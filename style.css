@@ -1,0 +1,54 @@
+*{
+   box-sizing: border-box;
+}
+.card{
+    position: relative;
+    top: 20px;
+    width: 485px;
+    height: 500px;
+  
+}
+.display{
+    position: relative;
+    top: 25px;
+    height: 80px;
+    background: rgb(133, 163, 126);
+    text-align: end;
+    font-family: 'Orbitron';
+    font-size: 53px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 443px;
+    border: 5px solid white;
+ 
+}
+.buttons{
+    position: relative;
+    top: 20px;
+    height: 300px;
+    padding:5px;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+.btn{
+    height: 60px;
+    width: 81px;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+#add {
+height: 130px;
+}
+#last{
+    position: relative;
+    bottom: 70px;
+}
+#eq{
+    position: relative;
+    left: 91px;
+}
+
+#ac{
+    width: 172px;
+}

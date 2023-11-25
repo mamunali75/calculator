@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-md-3"></div>
+            <div class="col col-md-6" style="display:flex;justify-content:center">
+
+                <div class="card bg-dark">
+                    <div class="card-body">
+                            <input type="text" class="display" value="" disabled />
+                        <div class="buttons">
+                            <div class="row">
+                                <button  id="off" class="btn off btn-danger" type="button">OFF</button>
+                                                       
+                                <button   id="ce" class="btn btn-secondary" type="button">CE</button>
+                                <button onclick="getlastResult()"   id="mrc" class="btn getlastresult btn-secondary" type="button">MRC</button>  
+                                <button  id="ac" class="btn clear btn-danger" type="button">AC</button>   
+                                
+                               
+                            </div>
+                            <div class="row">
+                                <button   value="7"  class="btn btn-light" type="button">7</button>
+                                <button   value="8"  class="btn btn-light" type="button">8</button>
+                                <button   id="nine" value="9"  class="btn btn-light" type="button">9</button>
+                                <button   id="modulus" value="%" class="btn operator btn-secondary" type="button">%</button>
+                                <button   id="power" value="^"  class="btn operator btn-secondary" type="button">x <sup>n</sup>  </button>
+                            </div>
+                            <div class="row">
+                                <button  id="four" value="4"  class="btn btn-light" type="button">4</button>
+                                <button  id="five" value="5"  class="btn btn-light" type="button">5</button>
+                                <button   id="six" value="6"  class="btn btn-light" type="button">6</button>
+                                <button   id="mul"  value="*" class="btn operator btn-secondary" type="button">x</button>
+                                <button   id="div"  value="/" class="btn operator btn-secondary" type="button">รท</button>
+                            </div>
+                            <div class="row">
+                                <button   id="one" value="1"  class="btn btn-light" type="button">1</button>
+                                <button   id="two" value="2"  class="btn btn-light" type="button">2</button>
+                                <button   id="three" value="3"  class="btn btn-light" type="button">3</button>
+                                <button   id="add"  value="+" class="btn operator btn-secondary" type="button">+</button>
+                                <button   id="sub"  value="-" class="btn operator btn-secondary" type="button">-</button>
+                            </div>
+                            <div id="last" class="row">
+                                <button   id="zero"  value="0" class="btn btn-light" type="button">0</button>
+                                <button   id="zero2"  value="00" class="btn btn-light" type="button">00</button>
+                                <button   id="dot" value="."  class="btn decimal btn-light" type="button">.</button>
+                                <button  id="eq" value="=" class="btn operator btn-secondary" type="button">=</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col col-md-3"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="main.js"> </script>
+
+
+
+
+</body>
+
+</html>
